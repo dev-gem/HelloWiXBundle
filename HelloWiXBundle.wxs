@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+   <Bundle 
+      Name="HelloWiXBundle" 
+      Version="0.0.0" 
+      UpgradeCode="12345678-1234-1234-1234-111111111111" 
+      Manufacturer="Lou Parslow"
+       >
+    <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense" />
+    <Chain>
+      <MsiPackage
+        SourceFile="bin/HelloCSharpConsole.msi" />
+    </Chain>
+  </Bundle>
+</Wix>
