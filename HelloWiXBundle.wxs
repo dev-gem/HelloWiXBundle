@@ -8,6 +8,7 @@
        >
     <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense" />
     <Chain>
+      <PackageGroupRef Id="NetFx452Web"/>
       <MsiPackage
         SourceFile="bin/HelloCSharpConsole.msi" />
     </Chain>
